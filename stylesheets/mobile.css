@@ -1,0 +1,152 @@
+/*----------------------------------------*/
+/* Mobile - layout changes for different screens
+/*----------------------------------------*/
+
+/* Move nav to top, center content */
+@media (max-width: 1000px) {	
+	.main_panel .content {
+		padding-left: 10em;	
+	}
+}
+
+@media (max-width: 800px) {	
+	#nav_panel {
+		margin: 0;
+		width: 100%;
+		position: static;
+	}
+	
+	#cyruskazemi {
+		width: 295px;
+		margin: auto;
+		margin-right: 0;
+		overflow: auto;
+		float: left;
+		margin: 0.2em 0 0 0;
+		vertical-align: center;
+	}
+	
+		#cyruskazemi i {
+			width: 32px;
+			height: 32px;
+			background-image: url("../images/ck_logo_black_32.png");
+			display: none;
+		}
+	
+		#cyruskazemi #name img{
+			display: inline;
+		}
+
+	#nav {
+		float: right;
+		margin: 0;
+		margin-top: 0.2em;
+		margin-bottom: 0;
+	}
+	
+		#nav li {
+			float: left;
+		}
+	
+	.main_panel .content {
+		max-width: 500px;
+		margin: auto;
+		padding: 0;
+		text-align: center;
+	}
+	
+		.main_panel .content p {
+			text-align: left;
+		}
+
+	#projects h2 {
+		margin-left: 0px;
+		padding-left: 20px;
+	}
+}
+
+/* Make nav icons only */
+@media (max-width: 720px) {	
+	#nav li i {
+		width: 32px;
+		height: 32px;
+	}
+	
+	#nav li span {
+		display: none;
+	}
+	
+	#nav li#nav_about i {
+		background: url("../images/kub_info_32.png") no-repeat;
+	}
+	
+	#nav li#nav_projects i {
+		background: url("../images/kub_tablet_32.png") no-repeat;
+	}
+	
+	#nav li#nav_blog i {
+		background: url("../images/kub_speech_32.png") no-repeat left center;
+	}
+	
+	#nav li#nav_resume i {
+		background: url("../images/kub_document_32.png") no-repeat;
+	}
+	
+	.content p {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+/* Center nav elements */
+@media (max-width: 500px) {	
+	#nav_panel {
+		text-align: center;
+	}
+	
+	#nav_panel > * {
+		float: none;
+		margin: auto;
+	}
+	
+	#cyruskazemi {
+		margin-top: 0.5em;
+	}
+	
+	#cyruskazemi i{
+		display: none;
+	}
+	
+	#nav {
+		width: 4.6em;
+		overflow: auto;
+	}
+	
+	#tagline {
+		font-size: 2em;
+	}
+	
+	#projects img {
+		width: 90%;
+		max-height: 281px;
+		height: auto;
+	}
+	
+	#footer #social_links {
+		width: 100%;
+		margin: 0;
+	}
+	
+	#footer #social_links a {
+		width: 100%;
+		margin: 0;
+		padding: 20px 0px;
+	}
+}
+
+@media (max-width: 400px) {
+	#about img {
+		width: 90%;
+		height: auto;
+	}
+}
